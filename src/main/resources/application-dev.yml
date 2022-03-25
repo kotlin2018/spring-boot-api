@@ -7,11 +7,11 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       # 初始化时建立物理连接的个数
-      initial-size: 5
+      initial-size: 20
       # 连接池的最小空闲数量
       min-idle: 5
       # 连接池最大连接数量
-      max-active: 20
+      max-active: 50
       # 获取连接时最大等待时间，单位毫秒
       max-wait: 60000
       # 申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。

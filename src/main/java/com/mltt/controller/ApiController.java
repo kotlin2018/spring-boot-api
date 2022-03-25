@@ -39,7 +39,7 @@ public class ApiController {
         return ApiResultUtils.success(jdbcTemplate.queryForList("select * from f_user limit 5"));
     }
 
-    @PostMapping("/queryMybatis")
+    @GetMapping("/queryMybatis")
     public ApiResultUtils queryMybatis() throws ServiceException {
         return ApiResultUtils.success(apiService.getUser());
     }
